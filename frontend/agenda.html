@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cogniversos Agenda</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-slate-900 text-white">
+
+<div class="flex h-screen">
+
+    <!-- Sidebar -->
+
+    <aside class="w-72 bg-slate-800 border-r border-slate-700 p-6">
+
+        <h1 class="text-3xl font-bold text-violet-400 mb-8">
+            Cogniversos
+        </h1>
+
+        <h2 class="font-semibold text-slate-300 mb-3">
+            Psicólogos
+        </h2>
+
+        <div
+            id="listaProfesionales"
+            class="space-y-2">
+        </div>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+
+    <main class="flex-1 overflow-auto p-8">
+
+        <div class="flex justify-between items-center mb-8">
+
+            <div>
+
+                <h2 class="text-3xl font-bold">
+                    Agenda
+                </h2>
+
+                <p
+                    id="profesionalActual"
+                    class="text-slate-400 mt-1">
+                    Selecciona un psicólogo
+                </p>
+
+                <p
+                    id="disponibilidadActual"
+                    class="text-sm text-violet-300 mt-1">
+                </p>
+
+            </div>
+
+            <input
+                id="fecha"
+                type="date"
+                class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-3">
+
+        </div>
+
+        <!-- Horarios -->
+
+        <div
+            id="horarios"
+            class="grid grid-cols-4 gap-4 mb-8">
+        </div>
+
+        <!-- Resultado -->
+
+        <div
+            id="resultado"
+            class="hidden bg-slate-800 rounded-xl border border-slate-700 p-6">
+
+            <h3 class="text-2xl font-bold text-green-400 mb-5">
+                ✅ Cita creada correctamente
+            </h3>
+
+            <div class="mb-6">
+
+                <h4 class="font-semibold text-violet-300 mb-2">
+                    Google Meet
+                </h4>
+
+                <div class="flex gap-3">
+
+                    <input
+                        id="meetLink"
+                        readonly
+                        class="flex-1 bg-slate-700 rounded-lg p-3">
+
+                    <button
+                        id="copiarMeet"
+                        class="bg-violet-600 hover:bg-violet-700 px-5 rounded-lg">
+
+                        📋 Copiar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4 class="font-semibold text-violet-300 mb-2">
+                    Mensaje para WhatsApp
+                </h4>
+
+                <textarea
+                    id="mensajeWhatsapp"
+                    rows="10"
+                    readonly
+                    class="w-full bg-slate-700 rounded-lg p-4 mb-4 resize-none"></textarea>
+
+                <button
+                    id="copiarMensaje"
+                    class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold">
+
+                    📋 Copiar mensaje
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- Toast -->
+
+<div
+    id="toast"
+    class="hidden fixed bottom-8 right-8 bg-green-600 px-6 py-3 rounded-xl shadow-xl font-semibold">
+
+    Copiado
+
+</div>
+
+<!-- Modal -->
+
+<div
+    id="modal"
+    class="fixed inset-0 bg-black/60 hidden justify-center items-center">
+
+    <div
+        class="bg-slate-800 rounded-xl w-[460px] p-6 border border-slate-700">
+
+        <h2
+            class="text-2xl font-bold mb-6">
+
+            Nueva cita
+
+        </h2>
+
+        <p
+            id="horaSeleccionada"
+            class="mb-5 text-violet-400 font-semibold">
+        </p>
+
+        <input
+            id="nombre"
+            class="w-full bg-slate-700 rounded-lg p-3 mb-3"
+            placeholder="Nombre del paciente">
+
+        <input
+            id="correo"
+            class="w-full bg-slate-700 rounded-lg p-3 mb-3"
+            placeholder="Correo">
+
+        <input
+            id="celular"
+            class="w-full bg-slate-700 rounded-lg p-3 mb-3"
+            placeholder="Celular">
+
+        <textarea
+            id="motivo"
+            rows="3"
+            class="w-full bg-slate-700 rounded-lg p-3 mb-5"
+            placeholder="Motivo (opcional)"></textarea>
+
+        <div class="flex justify-end gap-3">
+
+            <button
+                id="cerrarModal"
+                class="px-5 py-2 rounded-lg bg-slate-600 hover:bg-slate-500">
+
+                Cancelar
+
+            </button>
+
+            <button
+                id="crearCita"
+                class="px-5 py-2 rounded-lg bg-violet-600 hover:bg-violet-700">
+
+                Crear cita
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/profesionales.js"></script>
+<script src="js/mensaje.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/agenda.js"></script>
+
+</body>
+
+</html>

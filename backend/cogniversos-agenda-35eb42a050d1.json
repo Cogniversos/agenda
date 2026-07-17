@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cogniversos-agenda",
+  "private_key_id": "35eb42a050d1fc3196d82f5cf130d385e621971f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbu579Rm7S0d26\naMoPmmbpOgW5vJkWxDVhLGb8nrEe5SClVPPk/SHwFMeLE4/fYMExv4uXhqXQxHMf\nZhm5Vlpr515mK0oqgp78SsiRrgt9GyYLy9PhLscU3a4MXxXCUcQcupBI4Y3BSuUM\nH1aDA6illitx4gFc/qdSyBioO7Q3ci3+gweghZxqfejRig04g9jVn9INgSmf8Z6F\ngAoSXcLuOJ7Txn7kfx8Jm6SWTRJONHr5YHxWNswbfVeTajOxRoiay4DFB6VP1fPr\n2YrycueQPq4nprLxfCdAgzIqoTIQj7u6HcDiAgHm46LdlSXfbGSdsXrKz7giv4UP\n0mPsmhQpAgMBAAECggEADLn2aKVwbEHu9Wm10EcJUFdFtx76/+RP0ie79EQtroQn\nSqQbtybJFSpi70VsBwxHzD2TlGxeRLPoFgi4EzGy7X56S3EU69biZerf6H4b2Lxe\njP7ab/ehXK5FMx67uCQ7t00/55S2vNv9XaEgBdkLpsGGlSM5oHz4THVd5jqFAtP8\n2mYCdxvvtf8Dwj7uJ704DN4WBbwNzHKn029TkSj/AwR6yVLCBXVxPg7yNVfYC8Ac\nLCHrPARaH5Rgqsi8ysjB341DB+v2QdDuNfOSU20/v4qnZAE3FGSVS5GhsjF9qm3k\nLbbU8Eb0iJHX0ln88Rpc1nnZ/HVY31PkVJav7x4+wQKBgQD8hyGzSDqiYqVdJzjY\n00wawmm+287zuxEB8Uc+e1jUaiCQSnfaaOemQ4GA4KME3tMf5bUE0TV5AmSV7LEi\nuQ2xEZ3g6wUeuxEWYdMzCHuJH8uRZGPigiMrFLP2i1ozttPfwxOyaVu0SdDUeE81\nictT8sqHN6xBt3lJtj2YZHaOiQKBgQDewQ4USDbStyalLNvgOxuIC/OqxPi0N11D\nXI20+vMusBoGn//Csyr5inxjHv29rSX6BpALBglKVb7aoNhJo0o/qki2415BD71+\nziyzREkQuW4126bT5qlh3b+Iyi0FM5LYmkCxTp9V4/++akbhTiOj8S7IHrmNrOVw\nckgGiprwoQKBgAcyotdFW8Z9IVGCaLBldWnd2L3D7iYsUtPHWMyDH4kObVcviDMF\ngnTOv8Y4oOzmnQXvujUk8W09kDhlwrbGp4lAg0uB52d01YvZxfdSapMCAP9n6SDv\nrKjxsh944V1P/MIIAWu4bRC6eeVUeI2CG/WMmhE4mQRWgnKDa0YItwhhAoGBAL3O\nHJQVsHk+TLSkE7ruQphbLsaNTiopntN+MtVKnBplPdf1T7Z0eqLlaPYA+087EcgI\n/YYXH6VyiMy8D3A3rlWvYIROGwsvQVWikp4yClww1QMZZf7bZesZS1Jgi5oKBw9/\n6K3sg4JpY4q5/imPLnlMUoN9ArkA4QQ+rLa+NiXhAoGAfJ3sFfLW1CI0L2qIQco3\nn5GLqG21GLzZDtdNZCus2JXUT/BhwKbl7+q0hHyk8F6RfISFjSGsTEJHSvUBxitm\nKIhDWgzogLlC/s+PVYQvc46xL6tin9xuGbPWzPjC28PMqhEwoLgkT852lRCoh302\nSDoUnOsX5hL1QkwACO+WEio=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cogniversos@cogniversos-agenda.iam.gserviceaccount.com",
+  "client_id": "110728788680652120484",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cogniversos%40cogniversos-agenda.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

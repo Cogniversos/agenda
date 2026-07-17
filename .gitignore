@@ -1,0 +1,11 @@
+node_modules/
+
+backend/auth/tokens/
+
+.env
+
+credentials.json
+
+.vs/
+
+.vscode/
