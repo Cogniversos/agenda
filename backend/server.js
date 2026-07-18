@@ -20,6 +20,9 @@ app.use("/profesionales", profesionales);
 
 const PORT = process.env.PORT || 3000;
 
+console.log("TOKEN_DANIEL existe:", !!process.env.TOKEN_DANIEL);
+console.log("GOOGLE_CREDENTIALS existe:", !!process.env.GOOGLE_CREDENTIALS);
+
 app.listen(PORT, () => {
     console.log(`🚀 Servidor iniciado en el puerto ${PORT}`);
 });
