@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
 
         }
 
-        // Buscar el psicólogo para conocer su horario
+        // Buscar el psicólogo
         const profesional = profesionales.find(
             p => p.calendarId === calendarId
         );
@@ -31,15 +31,37 @@ router.get("/", async (req, res) => {
 
         }
 
+        // Obtener el día de la semana
+        const dias = [
+            "domingo",
+            "lunes",
+            "martes",
+            "miercoles",
+            "jueves",
+            "viernes",
+            "sabado"
+        ];
+
+        const dia = dias[new Date(`${fecha}T12:00:00`).getDay()];
+
+        const horario = profesional.horario[dia];
+
+        // Si ese día no trabaja
+        if (!horario) {
+
+            return res.json([]);
+
+        }
+
         const agenda = await obtenerAgenda(
 
             calendarId,
 
             fecha,
 
-            profesional.horario.inicio,
+            horario.inicio,
 
-            profesional.horario.fin
+            horario.fin
 
         );
 

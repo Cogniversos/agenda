@@ -9,8 +9,13 @@
     token: "milena",
 
     horario: {
-        inicio: "09:00",
-        fin: "19:00"
+        lunes: { inicio: "10:00", fin: "19:00" },
+        martes: { inicio: "09:00", fin: "18:00" },
+        miercoles: { inicio: "10:00", fin: "19:00" },
+        jueves: { inicio: "09:00", fin: "18:00" },
+        viernes: { inicio: "09:00", fin: "18:00" },
+        sabado: null,
+        domingo: null
     },
 
     disponibilidad: "FT Lunes y miércoles 10:00 am – 7:00 pm · Martes, jueves y viernes 9:00 am – 6:00 pm",
@@ -27,11 +32,16 @@
     token: "alejandra",
 
     horario: {
-        inicio: "09:00",
-        fin: "21:00"
+        lunes: { inicio: "09:00", fin: "15:00" },
+        martes: { inicio: "16:00", fin: "21:00" },
+        miercoles: { inicio: "09:00", fin: "15:00" },
+        jueves: { inicio: "16:00", fin: "21:00" },
+        viernes: { inicio: "09:00", fin: "15:00" },
+        sabado: null,
+        domingo: null
     },
 
-    disponibilidad: "HT Lunes, miércoles y viernes de 9 a 3 o 10am a 4pm, martes y jueves de 4 a 9pm",
+    disponibilidad: "HT Lunes, miércoles y viernes 9:00 am – 3:00 pm · Martes y jueves 4:00 pm – 9:00 pm",
 
     llavePago: "@LB3214854579"
 },
@@ -45,11 +55,16 @@
     token: "johanna",
 
     horario: {
-        inicio: "09:00",
-        fin: "19:00"
+        lunes: { inicio: "09:00", fin: "15:00" },
+        martes: { inicio: "13:00", fin: "19:00" },
+        miercoles: { inicio: "09:00", fin: "15:00" },
+        jueves: { inicio: "13:00", fin: "19:00" },
+        viernes: { inicio: "09:00", fin: "15:00" },
+        sabado: null,
+        domingo: null
     },
 
-    disponibilidad: "HT l-m-v 9 a 3pm y martes-jueves 1-7pm",
+    disponibilidad: "HT Lunes, miércoles y viernes 9:00 am – 3:00 pm · Martes y jueves 1:00 pm – 7:00 pm",
 
     llavePago: "@LB3214854579"
 },
@@ -63,8 +78,13 @@
     token: "tatiana",
 
     horario: {
-        inicio: "12:00",
-        fin: "21:00"
+        lunes: { inicio: "12:00", fin: "21:00" },
+        martes: { inicio: "12:00", fin: "21:00" },
+        miercoles: { inicio: "12:00", fin: "21:00" },
+        jueves: { inicio: "12:00", fin: "21:00" },
+        viernes: { inicio: "12:00", fin: "21:00" },
+        sabado: null,
+        domingo: null
     },
 
     disponibilidad: "FT Lunes a viernes 12:00 pm – 9:00 pm",
@@ -81,11 +101,16 @@
     token: "elemileth",
 
     horario: {
-        inicio: "17:40",
-        fin: "22:00"
+        lunes: { inicio: "17:40", fin: "22:00" },
+        martes: { inicio: "17:40", fin: "22:00" },
+        miercoles: { inicio: "17:40", fin: "22:00" },
+        jueves: { inicio: "17:40", fin: "22:00" },
+        viernes: { inicio: "17:40", fin: "22:00" },
+        sabado: { inicio: "14:00", fin: "22:00" },
+        domingo: null
     },
 
-    disponibilidad: "HT Lunes a jueves 5:40 pm – 10:00 pm · Sábados 2:00 pm – 6:00 pm y 8:40 a 9:40pm",
+    disponibilidad: "HT Lunes a viernes 5:40 pm – 10:00 pm · Sábados 2:00 pm – 10:00 pm",
 
     llavePago: "@LB3214854579"
 },
@@ -99,11 +124,16 @@
     token: "daniel",
 
     horario: {
-        inicio: "16:00",
-        fin: "20:40"
+        lunes: null,
+        martes: { inicio: "16:00", fin: "21:00" },
+        miercoles: { inicio: "16:00", fin: "21:00" },
+        jueves: { inicio: "16:00", fin: "21:00" },
+        viernes: { inicio: "16:00", fin: "21:00" },
+        sabado: { inicio: "10:40", fin: "16:00" },
+        domingo: null
     },
 
-    disponibilidad: "HT Martes a viernes 4:00 pm – 8:40 pm · Sábados 12:00 pm – 5:00 pm",
+    disponibilidad: "HT Martes a viernes 4:00 pm – 9:00 pm · Sábados 10:40 am – 4:00 pm",
 
     llavePago: "@LB3214854579"
 },
@@ -117,8 +147,13 @@
     token: "analucia",
 
     horario: {
-        inicio: "12:00",
-        fin: "21:00"
+        lunes: { inicio: "12:00", fin: "21:00" },
+        martes: { inicio: "12:00", fin: "21:00" },
+        miercoles: { inicio: "12:00", fin: "21:00" },
+        jueves: { inicio: "12:00", fin: "21:00" },
+        viernes: { inicio: "12:00", fin: "21:00" },
+        sabado: null,
+        domingo: null
     },
 
     disponibilidad: "FT Lunes a viernes 12:00 pm – 9:00 pm",
@@ -135,11 +170,16 @@
     token: "karen",
 
     horario: {
-        inicio: "08:00",
-        fin: "20:00"
+        lunes: { inicio: "07:00", fin: "10:00" },
+        martes: { inicio: "07:00", fin: "10:00" },
+        miercoles: { inicio: "15:40", fin: "20:00" },
+        jueves: { inicio: "07:00", fin: "10:00" },
+        viernes: { inicio: "15:40", fin: "20:00" },
+        sabado: null,
+        domingo: null
     },
 
-    disponibilidad: "Lunes, martes, jueves y viernes 8-10am, miércoles 3:40 a 8:00pm",
+    disponibilidad: "Lunes, martes y jueves 7:00 am – 10:00 am · Miércoles y viernes 3:40 pm – 8:00 pm",
 
     llavePago: "@LB3143260828"
 }
