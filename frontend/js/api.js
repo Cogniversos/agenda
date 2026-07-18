@@ -1,4 +1,4 @@
-const API = "http://localhost:3000";
+const API = "https://agenda-fcmt.onrender.com";
 
 async function obtenerProfesionales() {
 
