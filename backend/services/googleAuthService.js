@@ -8,7 +8,35 @@ const CREDENTIALS_PATH = path.join(
     "client_secret_109258926584-f061qokltts61297fb3l6t28ijfj7lbu.apps.googleusercontent.com.json"
 );
 
-async function obtenerAuth(nombreToken) {
+const TOKENS = {
+    milena: "TOKEN_MILENA",
+    alejandra: "TOKEN_ALEJANDRA",
+    johanna: "TOKEN_JOHANNA",
+    tatiana: "TOKEN_TATIANA",
+    elemileth: "TOKEN_ELEMILETH",
+    daniel: "TOKEN_DANIEL",
+    analucia: "TOKEN_ANALUCIA",
+    karen: "TOKEN_KAREN"
+};
+
+async function obtenerCredenciales() {
+
+    if (process.env.GOOGLE_CREDENTIALS) {
+        return JSON.parse(process.env.GOOGLE_CREDENTIALS);
+    }
+
+    const contenido = await fs.readFile(CREDENTIALS_PATH, "utf8");
+    return JSON.parse(contenido);
+
+}
+
+async function obtenerToken(nombreToken) {
+
+    const variable = TOKENS[nombreToken.toLowerCase()];
+
+    if (variable && process.env[variable]) {
+        return JSON.parse(process.env[variable]);
+    }
 
     const tokenPath = path.join(
         __dirname,
@@ -18,15 +46,17 @@ async function obtenerAuth(nombreToken) {
         `${nombreToken}.json`
     );
 
-    const [credencialesTexto, tokenTexto] = await Promise.all([
-        fs.readFile(CREDENTIALS_PATH, "utf8"),
-        fs.readFile(tokenPath, "utf8")
-    ]);
+    const contenido = await fs.readFile(tokenPath, "utf8");
+    return JSON.parse(contenido);
 
-    const credenciales = JSON.parse(credencialesTexto);
-    const token = JSON.parse(tokenTexto);
+}
 
-    const datos = credenciales.installed || credenciales.web;
+async function obtenerAuth(nombreToken) {
+
+    const credenciales = await obtenerCredenciales();
+    const token = await obtenerToken(nombreToken);
+
+    const datos = credenciales.web || credenciales.installed;
 
     const oauth2Client = new google.auth.OAuth2(
         datos.client_id,
@@ -37,6 +67,7 @@ async function obtenerAuth(nombreToken) {
     oauth2Client.setCredentials(token);
 
     return oauth2Client;
+
 }
 
 module.exports = obtenerAuth;
