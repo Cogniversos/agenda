@@ -116,6 +116,7 @@ ${motivo || "No registrado"}`,
         const fechaBonita = inicio.toLocaleDateString(
             "es-CO",
             {
+                timeZone: "America/Bogota",
                 day: "numeric",
                 month: "long",
                 year: "numeric"
@@ -125,6 +126,7 @@ ${motivo || "No registrado"}`,
         const horaBonita = inicio.toLocaleTimeString(
             "es-CO",
             {
+                timeZone: "America/Bogota",
                 hour: "numeric",
                 minute: "2-digit",
                 hour12: true
@@ -137,7 +139,7 @@ ${motivo || "No registrado"}`,
 ${fechaBonita}
 ${horaBonita}
 
-Profesional en psicología: ${profesional.nombre}
+Psicólogx: ${profesional.nombre}
 
 Link de Google Meet de tu sesión:
 ${evento.data.hangoutLink}
