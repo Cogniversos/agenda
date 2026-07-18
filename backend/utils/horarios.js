@@ -1,4 +1,4 @@
-function generarBloques(inicio, fin, duracion = 40) {
+function generarBloques(inicio, fin, duracion = 20) {
 
     const bloques = [];
 
