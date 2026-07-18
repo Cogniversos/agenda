@@ -3,7 +3,7 @@ const cors = require("cors");
 
 const disponibilidad = require("./routes/disponibilidad");
 const crearCita = require("./routes/crearCita");
-const profesionales=require("./routes/profesionales");
+const profesionales = require("./routes/profesionales");
 
 const app = express();
 
@@ -16,10 +16,10 @@ app.get("/", (req, res) => {
 
 app.use("/disponibilidad", disponibilidad);
 app.use("/crear-cita", crearCita);
-app.use("/profesionales",profesionales);
+app.use("/profesionales", profesionales);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log(`🚀 Servidor iniciado en http://localhost:${PORT}`);
+    console.log(`🚀 Servidor iniciado en el puerto ${PORT}`);
 });

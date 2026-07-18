@@ -5,7 +5,7 @@ const { google } = require("googleapis");
 const CREDENTIALS_PATH = path.join(
     __dirname,
     "..",
-    "client_secret_109258926584-1e5pl3pjtcbtp64hre0l45mkp010449n.apps.googleusercontent.com.json"
+    "client_secret_109258926584-f061qokltts61297fb3l6t28ijfj7lbu.apps.googleusercontent.com.json"
 );
 
 async function obtenerAuth(nombreToken) {
